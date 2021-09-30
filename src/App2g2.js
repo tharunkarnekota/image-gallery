@@ -21,7 +21,7 @@ const App = () => {
           <h2> Gallery Snapshots </h2>
           <form onSubmit={submitHandler}>
             <input size="30" type="text" value={search} onChange={changehandler}/><br /><br />
-            <input type="submit" value="search" />
+            <input type="submit" name="search" />
           </form>
           <br />
           {data.length>=1?<Gallery data={data}/>:<h4>no data loaded</h4>}
